@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusionFunds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+              <nav>
+                  <ul>
+                      <li>
+
+                          <a href='/dashboard'>Dashboard</a>
+                      </li>
+                      <li>
+<form action="/logout" method="post" action = "/logout">
+    <button type="submit">Logout</button>
+</form>                      </li>
+                  </ul>
+              </nav>
+          </header>
+<main>
+    <div class="container-form" id = "dashboardContainer">
+        <h1>InclusionFunds</h1>
+<form id="manage-programs" action="/budgeting" method="GET">
+        <button type="submit">Budgeting Tool</button>
+</form>
+<br>
+
+                <form id="manage-apps" action="/matchaid" method="GET">
+        <button type="submit">Apply to Programs</button>
+</form>
+<br>
+<form id="manage-programs" action="/viewapps/" method="POST">
+        <button type="submit">View Applications</button>
+</form>
+<br>
+<form id="manage-apps" action="/account" method="POST">
+        <button type="submit">Edit Account</button>
+</main>
+</form><script src="budgeting.js"></script>
+</body>
+</html>

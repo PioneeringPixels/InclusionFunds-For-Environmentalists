@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAid Bridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+              <nav>
+                  <ul>
+                      <li>
+
+                          <a href='/admin'>Admin</a>
+                      </li>
+                      <li>
+<form action="/logout" method="post" action = "/logout">
+    <button type="submit">Logout</button>
+</form>                      </li>
+                  </ul>
+              </nav>
+          </header>
+<main>
+    <div class="container-form" id = "dashboardContainer">
+        <h1>InclusionFunds</h1>
+        
+                <form id="manage-apps" action="/admin/manageapps" method="POST">
+        <button type="submit">Manage Applications</button>
+</form>
+<br>
+<form id="manage-programs" action="/admin/addnewprogram/" method="POST">
+        <button type="submit">Manage Programs</button>
+</form>
+<br>
+<form id="manage-apps" action="/admin/manageusers" method="POST">
+        <button type="submit">Manage Users</button>
+</form>
+<br>
+
+<form id="manage-apps" action="/admin/account" method="POST">
+        <button type="submit">Edit Account</button>
+</form>
+<br>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
